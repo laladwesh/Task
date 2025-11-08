@@ -1,0 +1,42 @@
+product_id,product_name,category,price,stock,rating,descriptionproduct_id,product_name,category,price,stock,rating,release_date
+
+1,Laptop Pro 15,Electronics,1299.99,45,4.5,High-performance laptop for professionals1,Laptop Pro 15,Electronics,1299.99,45,4.5,2023-01-15
+
+2,Wireless Mouse,Electronics,29.99,150,4.2,Ergonomic wireless mouse with long battery life2,Wireless Mouse,Electronics,29.99,150,4.2,2023-02-20
+
+3,Mechanical Keyboard,Electronics,79.99,120,4.4,RGB mechanical keyboard for gaming and productivity3,Mechanical Keyboard,Electronics,89.99,78,4.7,2023-03-10
+
+4,USB-C Hub,Electronics,49.99,200,4.1,7-in-1 USB-C hub with multiple ports4,4K Monitor,Electronics,449.99,32,4.6,2023-01-25
+
+5,Webcam HD,Electronics,89.99,85,4.3,1080p HD webcam for video conferencing5,USB-C Hub,Electronics,39.99,120,4.3,2023-04-05
+
+6,Monitor 27 inch,Electronics,349.99,60,4.6,27-inch 4K monitor with HDR support6,Noise Cancelling Headphones,Electronics,249.99,56,4.8,2023-02-14
+
+7,External SSD 1TB,Electronics,129.99,95,4.5,Portable 1TB SSD with fast transfer speeds7,Ergonomic Chair,Furniture,399.99,28,4.4,2023-03-22
+
+8,Noise Cancelling Headphones,Electronics,199.99,70,4.7,Premium noise cancelling over-ear headphones8,Standing Desk,Furniture,599.99,15,4.7,2023-01-30
+
+9,Office Chair,Furniture,399.99,28,4.4,Ergonomic office chair with lumbar support9,Desk Lamp LED,Furniture,49.99,89,4.5,2023-05-10
+
+10,Standing Desk,Furniture,599.99,15,4.6,Adjustable height standing desk10,Webcam HD,Electronics,79.99,67,4.3,2023-02-28
+
+11,Desk Lamp LED,Furniture,49.99,110,4.2,LED desk lamp with adjustable brightness11,External SSD 1TB,Electronics,129.99,94,4.6,2023-04-15
+
+12,Bookshelf,Furniture,199.99,35,4.3,5-tier wooden bookshelf12,Smartphone X,Electronics,899.99,42,4.5,2023-03-01
+
+13,Monitor Stand,Furniture,39.99,140,4.1,Adjustable monitor stand with storage13,Tablet Pro,Electronics,699.99,38,4.4,2023-04-20
+
+14,Cable Management Box,Accessories,19.99,180,4.0,Cable organizer box for desk setup14,Smart Watch,Electronics,349.99,71,4.2,2023-05-05
+
+15,Phone Stand,Accessories,15.99,220,4.2,Adjustable phone stand for desk15,Portable Charger,Electronics,34.99,156,4.1,2023-06-12
+
+16,Laptop Stand,Accessories,34.99,130,4.3,Aluminum laptop stand with cooling16,Backpack Tech,Accessories,79.99,83,4.6,2023-03-18
+
+17,Mouse Pad XL,Accessories,24.99,160,4.1,Extra large gaming mouse pad17,Cable Organizer,Accessories,14.99,203,4.0,2023-05-22
+
+18,Blue Light Glasses,Accessories,29.99,90,4.2,Computer glasses with blue light filtering18,Phone Case Premium,Accessories,24.99,145,4.3,2023-06-01
+
+19,Desk Mat,Accessories,39.99,105,4.4,Premium leather desk mat19,Screen Protector,Accessories,12.99,189,3.9,2023-06-15
+
+20,Plant for Desk,Decor,12.99,250,4.5,Small succulent plant for office decoration20,Laptop Stand,Furniture,59.99,102,4.5,2023-04-08
+
