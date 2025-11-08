@@ -1,0 +1,117 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: arcadedb-deployment
+  labels:
+    app: arcadedb
+    tier: database
+spec:
+  replicas: 1  # Start with 1 replica, can scale horizontally
+  selector:
+    matchLabels:
+      app: arcadedb
+      tier: database
+  template:
+    metadata:
+      labels:
+        app: arcadedb
+        tier: database
+    spec:
+      containers:
+      - name: arcadedb
+        image: arcadedata/arcadedb:latest
+        
+        # Environment variables
+        env:
+        - name: ARCADEDB_SERVER_NAME
+          value: "arcadedb-gcp-server"
+        - name: ARCADEDB_SERVER_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: arcadedb-secret
+              key: root-password
+        - name: ARCADEDB_SERVER_HTTP_PORT
+          value: "2480"
+        - name: ARCADEDB_SERVER_BINARY_PORT
+          value: "2424"
+        - name: ARCADEDB_SERVER_DEFAULT_DATABASE_MODE
+          value: "async"
+        - name: JAVA_OPTS
+          value: "-Xmx2G -Xms512M -Darcadedb.server.rootPassword=arcadedb123"
+        
+        # Ports
+        ports:
+        - name: http
+          containerPort: 2480
+          protocol: TCP
+        - name: binary
+          containerPort: 2424
+          protocol: TCP
+        
+        # Volume mounts for data persistence
+        volumeMounts:
+        - name: arcadedb-storage
+          mountPath: /home/arcadedb/data
+        
+        # Resource limits and requests
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "2.5Gi"
+            cpu: "2000m"
+        
+        # Liveness probe - checks if container is alive
+        livenessProbe:
+          httpGet:
+            path: /api/v1/ready
+            port: 2480
+          initialDelaySeconds: 60
+          periodSeconds: 30
+          timeoutSeconds: 10
+          failureThreshold: 3
+        
+        # Readiness probe - checks if container is ready to serve traffic
+        readinessProbe:
+          httpGet:
+            path: /api/v1/ready
+            port: 2480
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+      
+      # Volumes
+      volumes:
+      - name: arcadedb-storage
+        persistentVolumeClaim:
+          claimName: arcadedb-pvc
+      
+      # Restart policy
+      restartPolicy: Always
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: arcadedb-pvc
+  labels:
+    app: arcadedb
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  # For GCP, use standard or ssd storage class
+  storageClassName: standard-rwo
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: arcadedb-secret
+type: Opaque
+stringData:
+  root-password: "arcadedb123"  # Change this to a secure password
