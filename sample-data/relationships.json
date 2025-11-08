@@ -1,0 +1,172 @@
+[[
+
+  {  {
+
+    "from": "Alice Johnson",    "from_user_id": 1,
+
+    "to": "Bob Smith",    "to_user_id": 2,
+
+    "relationship_type": "FRIENDS",    "relationship": "FRIENDS",
+
+    "since": "2023-02-01",    "since": "2023-02-01",
+
+    "strength": 0.85    "strength": 0.85
+
+  },  },
+
+  {  {
+
+    "from": "Bob Smith",    "from_user_id": 1,
+
+    "to": "Carol Davis",    "to_user_id": 5,
+
+    "relationship_type": "COLLEAGUES",    "relationship": "FRIENDS",
+
+    "since": "2022-12-01",    "since": "2023-07-15",
+
+    "strength": 0.68    "strength": 0.72
+
+  },  },
+
+  {  {
+
+    "from": "Carol Davis",    "from_user_id": 2,
+
+    "to": "Alice Johnson",    "to_user_id": 3,
+
+    "relationship_type": "FRIENDS",    "relationship": "COLLEAGUES",
+
+    "since": "2023-03-15",    "since": "2022-12-01",
+
+    "strength": 0.75    "strength": 0.68
+
+  },  },
+
+  {  {
+
+    "from": "David Brown",    "from_user_id": 2,
+
+    "to": "Emma Wilson",    "to_user_id": 6,
+
+    "relationship_type": "FRIENDS",    "relationship": "FRIENDS",
+
+    "since": "2023-01-20",    "since": "2023-01-10",
+
+    "strength": 0.82    "strength": 0.90
+
+  },  },
+
+  {  {
+
+    "from": "Frank Miller",    "from_user_id": 3,
+
+    "to": "Grace Lee",    "to_user_id": 7,
+
+    "relationship_type": "COLLEAGUES",    "relationship": "COLLEAGUES",
+
+    "since": "2023-04-10",    "since": "2023-03-20",
+
+    "strength": 0.71    "strength": 0.75
+
+  },  },
+
+  {  {
+
+    "from": "Henry Taylor",    "from_user_id": 4,
+
+    "to": "Ivy Chen",    "to_user_id": 10,
+
+    "relationship_type": "FRIENDS",    "relationship": "COLLEAGUES",
+
+    "since": "2022-11-05",    "since": "2023-06-01",
+
+    "strength": 0.88    "strength": 0.82
+
+  },  },
+
+  {  {
+
+    "from": "Jack Anderson",    "from_user_id": 5,
+
+    "to": "Alice Johnson",    "to_user_id": 9,
+
+    "relationship_type": "FRIENDS",    "relationship": "FRIENDS",
+
+    "since": "2023-05-22",    "since": "2023-08-05",
+
+    "strength": 0.79    "strength": 0.78
+
+  },  },
+
+  {  {
+
+    "from": "Emma Wilson",    "from_user_id": 6,
+
+    "to": "Grace Lee",    "to_user_id": 8,
+
+    "relationship_type": "FRIENDS",    "relationship": "FRIENDS",
+
+    "since": "2023-02-14",    "since": "2022-11-15",
+
+    "strength": 0.91    "strength": 0.88
+
+  },  },
+
+  {  {
+
+    "from": "Bob Smith",    "from_user_id": 7,
+
+    "to": "Frank Miller",    "to_user_id": 3,
+
+    "relationship_type": "COLLEAGUES",    "relationship": "COLLEAGUES",
+
+    "since": "2022-10-18",    "since": "2023-03-20",
+
+    "strength": 0.73    "strength": 0.75
+
+  },  },
+
+  {  {
+
+    "from": "Ivy Chen",    "from_user_id": 8,
+
+    "to": "David Brown",    "to_user_id": 10,
+
+    "relationship_type": "COLLEAGUES",    "relationship": "FRIENDS",
+
+    "since": "2023-03-07",    "since": "2023-04-12",
+
+    "strength": 0.66    "strength": 0.65
+
+  },  },
+
+  {  {
+
+    "from": "Henry Taylor",    "from_user_id": 9,
+
+    "to": "Carol Davis",    "to_user_id": 5,
+
+    "relationship_type": "FRIENDS",    "relationship": "FRIENDS",
+
+    "since": "2023-01-30",    "since": "2023-08-05",
+
+    "strength": 0.84    "strength": 0.78
+
+  },  },
+
+  {  {
+
+    "from": "Jack Anderson",    "from_user_id": 10,
+
+    "to": "Emma Wilson",    "to_user_id": 4,
+
+    "relationship_type": "FRIENDS",    "relationship": "COLLEAGUES",
+
+    "since": "2023-04-25",    "since": "2023-06-01",
+
+    "strength": 0.77    "strength": 0.82
+
+  }  }
+
+]]
+
