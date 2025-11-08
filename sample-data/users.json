@@ -1,0 +1,184 @@
+[[
+
+  {  {
+
+    "name": "Alice Johnson",    "id": 1,
+
+    "email": "alice.johnson@email.com",    "name": "Alice Johnson",
+
+    "age": 28,    "email": "alice.johnson@email.com",
+
+    "city": "San Francisco",    "age": 28,
+
+    "occupation": "Software Engineer",    "city": "San Francisco",
+
+    "interests": ["coding", "hiking", "photography"]    "occupation": "Software Engineer",
+
+  },    "interests": ["coding", "hiking", "photography"],
+
+  {    "joined_date": "2023-01-15"
+
+    "name": "Bob Smith",  },
+
+    "email": "bob.smith@email.com",  {
+
+    "age": 35,    "id": 2,
+
+    "city": "New York",    "name": "Bob Smith",
+
+    "occupation": "Data Scientist",    "email": "bob.smith@email.com",
+
+    "interests": ["machine learning", "reading", "chess"]    "age": 35,
+
+  },    "city": "New York",
+
+  {    "occupation": "Data Scientist",
+
+    "name": "Carol Davis",    "interests": ["machine learning", "reading", "chess"],
+
+    "email": "carol.davis@email.com",    "joined_date": "2022-11-20"
+
+    "age": 42,  },
+
+    "city": "Seattle",  {
+
+    "occupation": "Product Manager",    "id": 3,
+
+    "interests": ["product design", "yoga", "traveling"]    "name": "Carol Davis",
+
+  },    "email": "carol.davis@email.com",
+
+  {    "age": 42,
+
+    "name": "David Brown",    "city": "Seattle",
+
+    "email": "david.brown@email.com",    "occupation": "Product Manager",
+
+    "age": 31,    "interests": ["product design", "yoga", "traveling"],
+
+    "city": "Boston",    "joined_date": "2023-03-10"
+
+    "occupation": "DevOps Engineer",  },
+
+    "interests": ["automation", "cycling", "cooking"]  {
+
+  },    "id": 4,
+
+  {    "name": "David Martinez",
+
+    "name": "Emma Wilson",    "email": "david.martinez@email.com",
+
+    "email": "emma.wilson@email.com",    "age": 31,
+
+    "age": 26,    "city": "Austin",
+
+    "city": "Austin",    "occupation": "DevOps Engineer",
+
+    "occupation": "UX Designer",    "interests": ["automation", "gaming", "music"],
+
+    "interests": ["design", "music", "art"]    "joined_date": "2023-05-22"
+
+  },  },
+
+  {  {
+
+    "name": "Frank Miller",    "id": 5,
+
+    "email": "frank.miller@email.com",    "name": "Emma Wilson",
+
+    "age": 39,    "email": "emma.wilson@email.com",
+
+    "city": "Chicago",    "age": 26,
+
+    "occupation": "Backend Developer",    "city": "Boston",
+
+    "interests": ["databases", "basketball", "gaming"]    "occupation": "UX Designer",
+
+  },    "interests": ["design", "painting", "cooking"],
+
+  {    "joined_date": "2023-07-08"
+
+    "name": "Grace Lee",  },
+
+    "email": "grace.lee@email.com",  {
+
+    "age": 29,    "id": 6,
+
+    "city": "Los Angeles",    "name": "Frank Brown",
+
+    "occupation": "Frontend Developer",    "email": "frank.brown@email.com",
+
+    "interests": ["web development", "surfing", "photography"]    "age": 39,
+
+  },    "city": "Chicago",
+
+  {    "occupation": "Security Analyst",
+
+    "name": "Henry Taylor",    "interests": ["cybersecurity", "martial arts", "podcasts"],
+
+    "email": "henry.taylor@email.com",    "joined_date": "2022-09-14"
+
+    "age": 45,  },
+
+    "city": "Miami",  {
+
+    "occupation": "System Architect",    "id": 7,
+
+    "interests": ["cloud computing", "fishing", "travel"]    "name": "Grace Lee",
+
+  },    "email": "grace.lee@email.com",
+
+  {    "age": 33,
+
+    "name": "Ivy Chen",    "city": "Los Angeles",
+
+    "email": "ivy.chen@email.com",    "occupation": "Marketing Manager",
+
+    "age": 33,    "interests": ["social media", "fitness", "fashion"],
+
+    "city": "Denver",    "joined_date": "2023-02-18"
+
+    "occupation": "ML Engineer",  },
+
+    "interests": ["AI", "skiing", "reading"]  {
+
+  },    "id": 8,
+
+  {    "name": "Henry Taylor",
+
+    "name": "Jack Anderson",    "email": "henry.taylor@email.com",
+
+    "email": "jack.anderson@email.com",    "age": 45,
+
+    "age": 27,    "city": "Denver",
+
+    "city": "Portland",    "occupation": "Architect",
+
+    "occupation": "Full Stack Developer",    "interests": ["architecture", "skiing", "wine tasting"],
+
+    "interests": ["coding", "coffee", "hiking"]    "joined_date": "2022-10-05"
+
+  }  },
+
+]  {
+
+    "id": 9,
+    "name": "Iris Chen",
+    "email": "iris.chen@email.com",
+    "age": 29,
+    "city": "San Diego",
+    "occupation": "Biotech Researcher",
+    "interests": ["science", "swimming", "documentaries"],
+    "joined_date": "2023-04-12"
+  },
+  {
+    "id": 10,
+    "name": "Jack Anderson",
+    "email": "jack.anderson@email.com",
+    "age": 37,
+    "city": "Portland",
+    "occupation": "Cloud Architect",
+    "interests": ["cloud computing", "coffee", "cycling"],
+    "joined_date": "2023-06-25"
+  }
+]
