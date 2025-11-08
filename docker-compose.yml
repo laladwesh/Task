@@ -1,0 +1,76 @@
+version: '3.8'
+
+services:
+  arcadedb:
+    # Use official ArcadeDB image
+    image: arcadedata/arcadedb:latest
+    
+    container_name: arcadedb-server
+    
+    # Run in detached mode (non-interactive)
+    stdin_open: false
+    tty: false
+    
+    # Environment variables for configuration
+    environment:
+      # Server configuration
+      - ARCADEDB_SERVER_NAME=arcadedb-server
+      - ARCADEDB_SERVER_ROOT_PASSWORD=arcadedb
+      - ARCADEDB_SERVER_HTTP_PORT=2480
+      - ARCADEDB_SERVER_BINARY_PORT=2424
+      
+      # Database configuration
+      - ARCADEDB_SERVER_DEFAULT_DATABASE_MODE=async
+      - ARCADEDB_SERVER_MAX_DATABASES=256
+      
+      # Memory settings
+      - JAVA_OPTS=-Xmx2G -Xms512M -Darcadedb.server.rootPassword=arcadedb
+    
+    # Port mappings
+    ports:
+      - "2480:2480"  # HTTP/REST API and Studio
+      - "2424:2424"  # Binary protocol
+    
+    # Volume for data persistence
+    volumes:
+      - arcadedb-data:/home/arcadedb/data
+      - ./sample-data:/home/arcadedb/sample-data:ro  # Mount sample data as read-only
+    
+    # Restart policy
+    restart: unless-stopped
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:2480/api/v1/ready"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    
+    # Resource limits (optional)
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 2.5G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+    
+    # Network
+    networks:
+      - arcadedb-network
+
+# Volumes
+volumes:
+  arcadedb-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./data
+
+# Networks
+networks:
+  arcadedb-network:
+    driver: bridge
