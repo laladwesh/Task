@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   arcadedb:
     # Use official ArcadeDB image
@@ -65,10 +63,6 @@ services:
 volumes:
   arcadedb-data:
     driver: local
-    driver_opts:
-      type: none
-      o: bind
-      device: ./data
 
 # Networks
 networks:
