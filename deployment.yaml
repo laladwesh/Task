@@ -6,7 +6,7 @@ metadata:
     app: arcadedb
     tier: database
 spec:
-  replicas: 1  # Start with 1 replica, can scale horizontally
+  replicas: 1  # Start with 1, can scale horizontally
   selector:
     matchLabels:
       app: arcadedb
